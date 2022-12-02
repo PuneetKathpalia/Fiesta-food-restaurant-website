@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="shortcut icon" href="img/login favicon.png" type="image/x-icon">
+
+</head>
+<style>
+
+</style>
+
+<body>
+    <script>
+        function validate() {
+            // var name = document.myform.name.value;
+            // var password = document.myform.password.value;
+            // if (name == null || name == "") {
+            //     alert("Name Can't Be Blank");
+            //     return false;
+            // }
+            // else if (password.length < 6) {
+            //     alert("Password Must Be Atleast 6 Digits")
+            //     return false;
+            // }
+
+            alert("Server is not active!!")
+        }
+    </script>
+    <div class="register">
+        <header>Login</header>
+        <form action="backend.php" name="myform" method="post" onsubmit="return validate()">
+            <input class="input" type="email" name="name" placeholder="Enter your email"> </br> </br>
+            <input class="input" type="password" name="password" placeholder="Enter your password"> </br></br>
+            <input type="checkbox" name="checkbox" id="check">
+            <label for="check" class="text">Remember password</label> <br><br>
+            <input type="submit" class="button" value="Login"> <br> <br>
+            <a href="#">Forgot Password?</a> <br>
+            <span class="text">Don't have an account?
+                <a href="register.html" class="text login-link">Signup</a> <br> <br>
+        </form>
+    </div>
+</body>
+
+</html>

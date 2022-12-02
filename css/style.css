@@ -1,0 +1,367 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    text-align: center;
+    
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgba(0, 0, 0);
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    
+}
+
+/* Navigation Bar: Logo and Image */
+#logo {
+    margin: 10px 34px;
+    top: 0px;
+}
+
+#logo img {
+    height: 33px;
+    margin: 3px 0px;
+    width: auto;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul {
+    display: flex;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#navbar ul li {
+    
+    font-size: 1.9rem;
+}
+
+#navbar ul li a {
+    color: rgb(158, 136, 136);
+    padding: 7px 22px;
+    border:5px;
+    text-decoration: none
+}
+
+#navbar ul li a:hover {
+    color: rgb(128, 122, 122);
+    background-color: rgb(255, 255, 255);
+ 
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url("\pk10.png") no-repeat center center/cover;
+    height: 639px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+}
+#home h2{
+    background: rgb(209, 209, 194);
+}
+
+#home h1 {
+     color: #ffffff00;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     text-shadow: 0 0 3px hwb(51 7% 78% / 0.532), 0 0 5px #98ab09;
+    font-size: 90px;
+    font-weight: 700px;
+}
+
+#home p {
+    color: rgb(235, 233, 233);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 210px;   
+    font-weight: 300px
+    ;font-size: 70px;
+    text-shadow: 0 0 3px #000000, 0 0 5px #0aff2b;
+}
+
+
+/* Menu Section */
+#menu {
+    position: relative ;
+}
+
+#menu::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('pk11.png') no-repeat center center/cover;
+
+}
+#menu {
+    margin: -12px;
+    display:inline-flex;
+    position: inherit;
+}
+
+#menu .box {
+    border: 2px solid rgb(255, 255, 255);
+    padding:34px;
+    margin: 20px 98px;
+    border-radius: 28px;
+    background: #0d3342;
+    margin-bottom: 20px;
+}
+.none{
+    list-style-type: none;
+}
+#menu .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+#menu .box p {
+    font-family: 'Poor Story', cursive;
+
+}
+
+/* Gallery Section */
+.images {
+    height: 350px;
+    width: 450px;
+}
+/* #gallery h1{
+
+
+} */
+
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: grey;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: url("\pk4.png")
+}
+
+.grid-item {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 3px solid rgba(247, 241, 241, 0.979);
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    border-radius:  15px; 
+}
+
+/* Healthy Tips Section */
+#health {
+    position: relative;
+
+}
+
+#health::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background-color: grey;
+    /* background: url('../bg2.png') no-repeat center center/cover; */
+
+}
+#health {
+    margin: -16px;
+    display: flex;
+    position: inherit;
+    padding: 1px;
+    margin-bottom: 16px;
+
+}
+
+#health .box {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 20px 221px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#health .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+#health .box p {
+    font-family: 'Poor Story', cursive;
+
+}
+
+/* Contact Section */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background-color: blue;
+    /* background: url('../contact.jpg') no-repeat center center/cover; */
+
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 42px;
+    font-size: 1.1rem;
+    
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Poor Story', cursive;
+
+}
+
+
+footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+
+/* Utility Classes */
+.h-primary {
+    font-family: 'Poor Story', cursive;
+    font-size: 5.8rem;
+    padding: 17px;
+    margin-top: 6px;
+}
+
+.h-secondary {
+    font-family: 'Poor Story', cursive;
+    font-size: 2.3rem;
+    padding: 11px;
+}
+.h3-primary{
+    margin: 12px;
+    font-family: 'Poor Story', cursive;
+    font-size: 5.8rem;
+    padding: 20px;
+    align-items: center;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid rgb(239, 52, 0);
+    background-color: rgb(16, 8, 8);
+    color: white;
+    margin: 17px;
+    font-size: 1.8rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: black;
+    background-color: rgb(32, 32, 48);}
+.center {
+    text-align: center;
+}
+
+
+
+
+
+.gallery {
+    display: grid;
+    height: 200px;
+    align-content: center;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto;
+    row-gap: 10px;
+    background-color: rgb(5, 69, 75);
+}
+
+.gallery>div {
+    background-color: rgb(5, 69, 75);
+    text-align: center;
+    font-size: 30px;
+}
+
+img.gallery1 {
+    height: 367px;
+    width: 463px;
+    padding: 11px;
+
+}
+
+
+.zoom {
+    transition: transform .2s;
+    /* Animation */
+}
+
+img.zoom:hover {
+    transform: scale(1.3);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
